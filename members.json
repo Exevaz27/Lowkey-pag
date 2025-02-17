@@ -1,0 +1,103 @@
+{
+  "1": {
+    "cover": "images/cover1.webp",
+    "image": "images/miembro1.webp",
+    "name": "Kane Connor",
+    "role": "Líder de Pandilla",
+    "bio": "Kane es un apasionado de los videojuegos y líder carismático de nuestro equipo.",
+    "edad": 28,
+    "occupation": "Streamer Profesional",
+    "weapon": "Ametralladora de confianza",
+    "specialty": "Estrategia y reflejos",
+    "stats": {
+      "victorias": 25,
+      "derrotas": 5,
+      "kd": 3.5
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/2380524509",
+        "description": "Mejores jugadas en el torneo"
+      },
+      {
+        "url": "https://www.twitch.tv/lautyvzz/clip/MotionlessDeterminedZucchiniResidentSleeper-Pz3P12inWXlp6r6W",
+        "description": "Momento destacado del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/tu_usuario",
+      "twitter": "https://www.twitter.com/tu_usuario",
+      "instagram": "https://www.instagram.com/tu_usuario",
+      "youtube": "https://www.youtube.com/tu_usuario"
+    }
+  },
+  "2": {
+    "cover": "images/cover1.webp",
+    "image": "images/miembro1.webp",
+    "name": "Diego Zavala",
+    "role": "Líder2 de Pandilla",
+    "edad": 26,
+    "bio": "Diego es un apasionado de los videojuegos y líder carismático de nuestro equipo.",
+    "occupation": "Streamer Profesional",
+    "weapon": "Ametralladora de confianza",
+    "specialty": "Estrategia y reflejos",
+    "stats": {
+      "victorias": 25,
+      "derrotas": 5,
+      "kd": 3.5
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/2380524509",
+        "description": "Mejores jugadas en el torneo"
+      },
+      {
+        "url": "https://www.twitch.tv/lautyvzz/clip/MotionlessDeterminedZucchiniResidentSleeper-Pz3P12inWXlp6r6W",
+        "description": "Momento destacado del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/tu_usuario",
+      "twitter": "https://www.twitter.com/tu_usuario",
+      "instagram": "https://www.instagram.com/tu_usuario",
+      "youtube": "https://www.youtube.com/tu_usuario"
+    }
+  },
+  "3": {
+    "cover": "images/cover3.webp",
+    "image": "images/perfil3.png",
+    "name": "Lucas Velazque",
+    "role": "Líder de Pandilla",
+    "bio": "lucas es un apasionado miembro y líder de la banda su mejor virtud es comer piso siempre.",
+    "edad": 25,
+    "occupation": "Encargado en LTD",
+    "weapon": "AK 47 y B2001",
+    "specialty": "Hackeos",
+    "stats": {
+      "victorias": 10,
+      "derrotas": 3,
+      "kd": 5.1
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/2380123012",
+        "description": "Lucas Velazquez en DOVUX LIVE",
+        "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/2b0779a64164233e4d1f_lautyvzz_314278331125_1739460484//thumb/thumb0-320x180.jpg"
+      },
+      {
+        "url": "https://www.twitch.tv/lautyvzz/clip/MotionlessDeterminedZucchiniResidentSleeper-Pz3P12inWXlp6r6W",
+        "description": "Momento destacado del stream",
+        "type": "clip",
+        "thumbnail": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/MotionlessDeterminedZucchiniResidentSleeper-Pz3P12inWXlp6r6W/4ae8d2ee-d3bd-4bd0-b598-16c82fd83bba/preview.jpg"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/lautyvzz",
+      "facebook": "https://www.facebook.com/Lautaro.Vazquez.5832",
+      "instagram": "https://www.instagram.com/lautyvzz_05/",
+      "youtube": "https://www.youtube.com/@lautyvzz"
+    }
+  }
+}

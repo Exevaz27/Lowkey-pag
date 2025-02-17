@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lowkey - La Pandilla GTA V</title>
+  <meta name="description" content="Lowkey: La pandilla GTA V que deja su huella en la historia. Conoce a los miembros, sus historias, anécdotas y mucho más.">
+  <meta name="keywords" content="GTA V, Lowkey, pandilla, miembros, historias, anécdotas, Twitch, Discord, redes sociales">
+  <meta name="robots" content="index, follow">
+  <!-- Fuentes Urbanas -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #8A2BE2;
+      --color-secondary: #000000;
+      --color-text: #ffffff;
+      --color-accent: #e0e0e0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4, h5, h6, nav ul li a, .menu-toggle {
+      font-family: 'Bebas Neue', sans-serif;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: var(--color-primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      z-index: 9999;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    nav .logo {
+      flex-shrink: 0;
+      margin-left: 1rem;
+    }
+    nav .logo a {
+      display: block;
+    }
+    nav .logo img {
+      width: auto;
+      max-width: 120px;
+      max-height: 50px;
+      height: auto;
+      object-fit: contain;
+      transform: scale(2);
+    }
+    .menu-toggle {
+      display: none;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: var(--color-text);
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin-right: 2rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: var(--color-text);
+      font-weight: 6;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: var(--color-secondary);
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: row;
+        align-items: center;
+      }
+      nav .logo {
+        margin-left: 0.5rem;
+      }
+      nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+        background-color: var(--color-primary);
+        margin-right: 0;
+      }
+      nav ul.active {
+        max-height: 300px;
+        opacity: 1;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+    header {
+      height: 100vh;
+      background: url('images/fondo.jpg') no-repeat center center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 1rem;
+      margin-top: 80px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    header button {
+      background-color: var(--color-secondary);
+      color: var(--color-text);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      border-radius: 5px;
+    }
+    header button:hover {
+      transform: scale(1.05);
+      background-color: var(--color-primary);
+    }
+    #historia {
+      padding: 2rem;
+      text-align: center;
+    }
+    .members-list {
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .member-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--color-primary);
+      color: var(--color-text);
+      padding: 1rem;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      width: calc(50% - 0.5rem);
+      max-width: 200px;
+    }
+    .member-link img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background-color: var(--color-primary);
+      color: var(--color-text);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: var(--color-text);
+      margin: 0 0.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    footer a:hover {
+      color: var(--color-secondary);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo de LOWKEY - La Pandilla GTA V">
+      </a>
+    </div>
+    <button class="menu-toggle" aria-label="Menú" aria-expanded="false" aria-controls="menu">☰</button>
+    <ul id="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#miembros">Miembros</a></li>
+      <li><a href="#redes">Redes</a></li>
+    </ul>
+  </nav>
+  <main>
+    <header id="inicio">
+      <h1>Bienvenidos a LOWKEY</h1>
+      <p>Descubre la historia y haz parte de la pandilla más letal de GTA V.</p>
+      <button id="btnMiembros">Conoce a Nuestros Miembros</button>
+    </header>
+    <section id="historia">
+      <h2>Nuestra Historia</h2>
+      <p>Próximamente... Aquí se contará la evolución de la pandilla Lowkey.</p>
+    </section>
+    <section id="miembros" class="members-list">
+      <a href="miembro.html?id=1" class="member-link">
+        <img src="images/miembro1.webp" alt="Miembro: Jugador 1" loading="lazy">
+        <span>Jugador 1</span>
+      </a>
+      <a href="miembro.html?id=2" class="member-link">
+        <img src="images/miembro2.webp" alt="Miembro: Jugador 2" loading="lazy">
+        <span>Jugador 2</span>
+      </a>
+      <a href="miembro.html?id=3" class="member-link">
+        <img src="images/miembro3.png" alt="Miembro: Líder" loading="lazy">
+        <span>Líder</span>
+      </a>
+    </section>
+  </main>
+  <footer id="redes">
+    <p>Síguenos en:</p>
+    <a href="https://discord.gg/tuenlace" target="_blank" rel="noopener" aria-label="Discord">Discord</a>
+    <a href="https://twitter.com/tuenlace" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a>
+    <a href="https://instagram.com/tuenlace" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.getElementById('menu');
+      const btnMiembros = document.getElementById('btnMiembros');
+
+      // Toggle del menú
+      menuToggle.addEventListener('click', toggleMenu);
+
+      // Cerrar menú al hacer clic en enlaces (en móviles)
+      menu.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A' && window.innerWidth <= 768) {
+          menu.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Cerrar menú al redimensionar
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+          menu.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Botón de miembros con scrollIntoView
+      btnMiembros.addEventListener('click', () => {
+        document.getElementById('miembros').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      const menuToggle = document.querySelector('.menu-toggle');
+      menu.classList.toggle('active');
+      // Actualizar atributo aria-expanded
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !isExpanded);
+    }
+  </script>
+</body>
+</html>

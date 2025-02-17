@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perfil del miembro en Lowkey. Conoce a nuestro líder de pandilla y sus mejores jugadas en Twitch.">
+  <meta name="robots" content="index, follow">
+  <title>Perfil del Miembro - Lowkey</title>
+  <style>
+    :root {
+      --color-primary: #8A2BE2; /* Color de Twitch */
+      --color-secondary: #000;
+      --color-text: #ffffff;
+      --background-color: #f0f0f0; /* Color de fondo */
+      --sidebar-background: #ffffff; /* Fondo del sidebar */
+      --main-content-background: #ffffff; /* Fondo del contenido principal */
+    }
+    body {
+      background: linear-gradient(to bottom, #963dd1, #000000); /* Degradado de lila a negro */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: var(--color-primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      height: 50px;
+      z-index: 9999;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    nav .logo img {
+      max-width: 100px;
+      max-height: 100px;
+      object-fit: contain;
+    }
+    .cover-container {
+      width: 100%;
+      height: 250px;
+      background: #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      margin-top: 60px;
+    }
+    .cover-container img {
+      width: 100%;
+      height: 150%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    .profile-container {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+      top: -50px;
+    }
+    .sidebar {
+      width: 30%;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+    .main-content {
+      width: 70%;
+      background: var(--main-content-background);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .profile-pic {
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid rgb(0, 0, 0);
+      margin: auto;
+      margin-top: -100px;
+      background: var(--main-content-background);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .bio {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #444;
+      text-align: center;
+      line-height: 1.5;
+      padding: 10px;
+    }
+    .videos-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background: var(--main-content-background);
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .videos-section h2 {
+      color: var(--color-primary);
+    }
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .video-item {
+      width: 400px;
+      max-width: 100%;
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    .video-placeholder {
+      position: relative;
+      width: 100%;
+      height: 225px;
+      border-radius: 10px;
+      cursor: pointer;
+      overflow: hidden;
+      background: #000;
+    }
+    .video-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .video-placeholder .play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      color: #fff;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .video-item iframe {
+      width: 100%;
+      height: 225px;
+      border-radius: 10px;
+      border: none;
+    }
+    .video-description {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #444;
+    }
+    @media (max-width: 768px) {
+      .profile-container {
+        flex-direction: column;
+        top: 0;
+      }
+      .sidebar, .main-content {
+        width: 100%;
+      }
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        margin-top: -75px;
+      }
+      .video-item {
+        width: 100%;
+      }
+    }
+    .social-media-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background: var(--main-content-background);
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .social-media-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s;
+    }
+    .social-icon:hover {
+      transform: scale(1.1);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 10000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo de LOWKEY">
+      </a>
+    </div>
+  </nav>
+
+  <div class="cover-container" id="coverContainer">
+    <img src="images/cover3.webp" alt="Portada del Miembro" id="coverImage">
+  </div>
+
+  <div class="profile-container">
+    <section class="main-content">
+      <img src="images/miembro1.webp" alt="Foto del miembro" class="profile-pic" id="profilePic">
+      <h1 id="memberName">Nombre del Miembro</h1>
+      <p style="color: var(--color-primary);" id="memberRole">Rol del Miembro</p>
+      <p class="bio" id="memberBio">Biografía del miembro.</p>
+    </section>
+    <aside class="sidebar">
+      <h2>Información del Personaje</h2>
+      <div class="info-box">
+        <p><strong>Edad:</strong> <span id="memberAge">N/A</span> Años</p>
+        <p><strong>Ocupación:</strong> <span id="memberOccupation">N/A</span></p>
+        <p><strong>Arma favorita:</strong> <span id="memberWeapon">N/A</span></p>
+        <p><strong>Especialidad:</strong> <span id="memberSpecialty">N/A</span></p>
+      </div>
+      <h2>Estadísticas</h2>
+      <div class="info-box">
+        <p><strong>🏆 Victorias:</strong> <span id="memberWins">0</span></p>
+        <p><strong>💀 Derrotas:</strong> <span id="memberLosses">0</span></p>
+        <p><strong>🔥 K/D Ratio:</strong> <span id="memberKDR">0</span></p>
+      </div>
+    </aside>
+  </div>
+
+  <section class="videos-section">
+    <h2>🎥 Mis Videos en Twitch</h2>
+    <div class="video-container" id="twitch-videos"></div>
+  </section>
+
+  <section class="social-media-section">
+    <h2>🌐 Redes Sociales</h2>
+    <div class="social-media-links" id="socialMediaLinks"></div>
+  </section>
+
+  <!-- Modal para imágenes ampliadas -->
+  <div id="imageModal" class="modal">
+    <img id="modalImage" src="" alt="Imagen ampliada">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Obtener el ID del miembro de la URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const memberId = urlParams.get('id');
+      // Usar el hostname actual para el parámetro "parent" en Twitch
+      const twitchParent = window.location.hostname;
+
+      fetch('members.json')
+        .then(response => response.json())
+        .then(data => {
+          const member = data[memberId];
+          if (!member) {
+            console.error('Miembro no encontrado');
+            return;
+          }
+
+          // Actualizar elementos del DOM con los datos del miembro
+          document.getElementById('coverImage').src = member.cover;
+          document.getElementById('profilePic').src = member.image;
+          document.getElementById('memberName').textContent = member.name;
+          document.getElementById('memberRole').textContent = member.role;
+          document.getElementById('memberBio').textContent = member.bio;
+
+          // Actualizar información del personaje
+          document.getElementById('memberAge').textContent = member.edad || "N/A";
+          document.getElementById('memberOccupation').textContent = member.occupation || "N/A";
+          document.getElementById('memberWeapon').textContent = member.weapon || "N/A";
+          document.getElementById('memberSpecialty').textContent = member.specialty || "N/A";
+
+          // Actualizar estadísticas
+          const stats = member.stats || {};
+          document.getElementById('memberWins').textContent = stats.victorias || 0;
+          document.getElementById('memberLosses').textContent = stats.derrotas || 0;
+          document.getElementById('memberKDR').textContent = stats.kd || 0;
+
+          // Cargar videos o clips de Twitch
+          const videosContainer = document.getElementById('twitch-videos');
+          videosContainer.innerHTML = "";
+          if (Array.isArray(member.videos)) {
+            member.videos.forEach(video => {
+              let embedUrl = "";
+              // Eliminar barra final para evitar cadenas vacías
+              const trimmedUrl = video.url.replace(/\/$/, "");
+              // Detectar si es clip o video normal
+              if (video.type === "clip" || trimmedUrl.includes("clips.twitch.tv")) {
+                const clipSlug = trimmedUrl.split('/').pop();
+                embedUrl = `https://clips.twitch.tv/embed?clip=${clipSlug}&parent=${twitchParent}&autoplay=false`;
+              } else {
+                const videoId = trimmedUrl.split('/').pop();
+                embedUrl = `https://player.twitch.tv/?video=${videoId}&parent=${twitchParent}&autoplay=false`;
+              }
+              // Usar la miniatura definida en el JSON o dejar vacío
+              const thumbnail = video.thumbnail || "";
+              videosContainer.innerHTML += `
+                <div class="video-item">
+                  <div class="video-placeholder" data-embed="${embedUrl}">
+                    ${thumbnail ? `<img src="${thumbnail}" alt="Miniatura del video">` : ""}
+                    <div class="play-icon">▶</div>
+                  </div>
+                  <p class="video-description">${video.description || ""}</p>
+                </div>
+              `;
+            });
+          }
+
+          // Añadir evento a cada placeholder para cargar el iframe al hacer clic
+          document.querySelectorAll('.video-placeholder').forEach(placeholder => {
+            placeholder.addEventListener('click', function() {
+              const embedUrl = this.getAttribute('data-embed');
+              this.innerHTML = `<iframe src="${embedUrl}" allowfullscreen></iframe>`;
+            });
+          });
+
+          // Cargar enlaces de redes sociales (si existen)
+          const socialMediaLinks = document.getElementById('socialMediaLinks');
+          socialMediaLinks.innerHTML = "";
+          if (member.social) {
+            if (member.social.twitch) {
+              socialMediaLinks.innerHTML += `
+                <a href="${member.social.twitch}" target="_blank">
+                  <img src="images/twitch.png" alt="Twitch" class="social-icon">
+                </a>
+              `;
+            }
+            if (member.social.facebook) {
+              socialMediaLinks.innerHTML += `
+                <a href="${member.social.facebook}" target="_blank">
+                  <img src="images/facebook.png" alt="Facebook" class="social-icon">
+                </a>
+              `;
+            }
+            if (member.social.instagram) {
+              socialMediaLinks.innerHTML += `
+                <a href="${member.social.instagram}" target="_blank">
+                  <img src="images/instagram.png" alt="Instagram" class="social-icon">
+                </a>
+              `;
+            }
+            if (member.social.youtube) {
+              socialMediaLinks.innerHTML += `
+                <a href="${member.social.youtube}" target="_blank">
+                  <img src="images/youtube.png" alt="YouTube" class="social-icon">
+                </a>
+              `;
+            }
+          }
+        })
+        .catch(error => {
+          console.error("Error al cargar los datos:", error);
+        });
+
+      // Funcionalidad del modal para ampliar imágenes
+      const profilePic = document.getElementById('profilePic');
+      const coverImage = document.getElementById('coverImage');
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+
+      profilePic.addEventListener('click', function() {
+        modal.style.display = "flex";
+        modalImage.src = this.src;
+      });
+
+      coverImage.addEventListener('click', function() {
+        modal.style.display = "flex";
+        modalImage.src = this.src;
+      });
+
+      modal.addEventListener('click', function() {
+        modal.style.display = "none";
+      });
+    });
+  </script>
+</body>
+</html>
