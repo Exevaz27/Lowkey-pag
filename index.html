@@ -37,20 +37,20 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background-color: var(--color-primary);
+      background-color: rgba(138, 43, 226, 0.8); /* Lila con 80% de opacidad */
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      padding: 0.01rem 1rem; /* Ajusta este valor para cambiar el tamaño vertical */
+      padding: 0.5rem 1rem; /* Ajusta este valor para cambiar el tamaño vertical */
       z-index: 9999;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
     .nav-container {
       display: flex;
       justify-content: space-between;
-      align-items: center center;
+      align-items: center;
       width: 100%;
-      max-width: 10009px; /* Ajusta este valor para hacer el menú más fino */
+      max-width: 12050px; /* Ajusta este valor para hacer el menú más fino */
       padding: 0 1rem;
     }
     .menu-wrapper {
@@ -61,22 +61,23 @@
     }
     nav .logo, nav .logo-right {
       flex-shrink: 0;
-      margin-left: 1rem;
-      margin-top: 1.5rem; /* Ajusta este valor para mover los logos hacia abajo */
+    }
+    nav .logo {
+      margin-left: 0;
     }
     nav .logo-right {
-      margin-left: auto;
+      margin-right: 0;
     }
     nav .logo a, nav .logo-right a {
       display: block;
     }
     nav .logo img, nav .logo-right img {
       width: auto;
-      max-width: 120px; /* Ajusta este valor según el tamaño deseado */
+      max-width: 100px; /* Ajusta este valor según el tamaño deseado */
       max-height: 50px; /* Ajusta este valor según el tamaño deseado */
       height: auto;
       object-fit: contain;
-      transform: scale(2);
+      transform: scale(1.5);
     }
     .menu-toggle {
       display: none;
@@ -125,7 +126,7 @@
         overflow: hidden;
         opacity: 0;
         transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-        background-color: var(--color-primary);
+        background-color: rgba(138, 43, 226, 0.8); /* Lila con 80% de opacidad */
         margin-right: 0;
       }
       nav ul.active {
@@ -134,11 +135,16 @@
       }
       .menu-toggle {
         display: block;
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0 auto; /* Centra el botón del menú hamburguesa */
       }
     }
     header {
       height: 100vh;
       background: url('images/fondo.jpg') no-repeat center center;
+      background-size: cover; /* Asegura que la imagen de fondo cubra todo el área */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -214,7 +220,7 @@
       transition: color 0.3s ease;
     }
     footer a:hover {
-      color: var(--color-secondary);
+      color: var (--color-secondary);
     }
   </style>
 </head>
@@ -255,15 +261,63 @@
     <section id="miembros" class="members-list">
       <a href="miembro.html?id=1" class="member-link">
         <img src="images/miembro1.webp" alt="Miembro: Jugador 1" loading="lazy">
-        <span>Jugador 1</span>
+        <span>Lider 1</span>
       </a>
       <a href="miembro.html?id=2" class="member-link">
         <img src="images/miembro2.webp" alt="Miembro: Jugador 2" loading="lazy">
-        <span>Jugador 2</span>
+        <span>Lider 2</span>
       </a>
       <a href="miembro.html?id=3" class="member-link">
         <img src="images/miembro3.png" alt="Miembro: Líder" loading="lazy">
-        <span>Líder</span>
+        <span>Líder 3</span>
+      </a>
+      <a href="miembro.html?id=4" class="member-link">
+        <img src="images/miembro4.png" alt="Miembro: Jugador 4" loading="lazy">
+        <span>Jugador 4</span>
+      </a>
+      <a href="miembro.html?id=5" class="member-link">
+        <img src="images/miembro5.png" alt="Miembro: Jugador 5" loading="lazy">
+        <span>Jugador 5</span>
+      </a>
+      <a href="miembro.html?id=6" class="member-link">
+        <img src="images/miembro6.png" alt="Miembro: Jugador 6" loading="lazy">
+        <span>Jugador 6</span>
+      </a>
+      <a href="miembro.html?id=7" class="member-link">
+        <img src="images/miembro7.png" alt="Miembro: Jugador 7" loading="lazy">
+        <span>Jugador 7</span>
+      </a>
+      <a href="miembro.html?id=8" class="member-link">
+        <img src="images/miembro8.png" alt="Miembro: Jugador 8" loading="lazy">
+        <span>Jugador 8</span>
+      </a>
+      <a href="miembro.html?id=9" class="member-link">
+        <img src="images/miembro9.png" alt="Miembro: Jugador 9" loading="lazy">
+        <span>Jugador 9</span>
+      </a>
+      <a href="miembro.html?id=10" class="member-link">
+        <img src="images/miembro10.png" alt="Miembro: Jugador 10" loading="lazy">
+        <span>Jugador 10</span>
+      </a>
+      <a href="miembro.html?id=11" class="member-link">
+        <img src="images/miembro11.png" alt="Miembro: Jugador 11" loading="lazy">
+        <span>Jugador 11</span>
+      </a>
+      <a href="miembro.html?id=12" class="member-link">
+        <img src="images/miembro12.png" alt="Miembro: Jugador 12" loading="lazy">
+        <span>Jugador 12</span>
+      </a>
+      <a href="miembro.html?id=13" class="member-link">
+        <img src="images/miembro13.png" alt="Miembro: Jugador 13" loading="lazy">
+        <span>Jugador 13</span>
+      </a>
+      <a href="miembro.html?id=14" class="member-link">
+        <img src="images/miembro14.png" alt="Miembro: Jugador 14" loading="lazy">
+        <span>Jugador 14</span>
+      </a>
+      <a href="miembro.html?id=15" class="member-link">
+        <img src="images/miembro15.png" alt="Miembro: Jugador 15" loading="lazy">
+        <span>Jugador 15</span>
       </a>
     </section>
   </main>
