@@ -2,7 +2,7 @@
   "1": {
     "cover": "images/cover1.webp",
     "image": "images/miembro1.webp",
-    "name": "Kane Connor",
+    "name": "Liam levington",
     "role": "Líder de Pandilla",
     "bio": "Kane es un apasionado de los videojuegos y líder carismático de nuestro equipo.",
     "edad": 28,
@@ -35,7 +35,7 @@
   "2": {
     "cover": "images/cover1.webp",
     "image": "images/miembro1.webp",
-    "name": "Diego Zavala",
+    "name": "Nicolas Moreira",
     "role": "Líder2 de Pandilla",
     "edad": 26,
     "bio": "Diego es un apasionado de los videojuegos y líder carismático de nuestro equipo.",
@@ -68,7 +68,7 @@
   "3": {
     "cover": "images/cover3.webp",
     "image": "images/miembro3.png",
-    "name": "Alex Johnson",
+    "name": "Kane Connor",
     "role": "Miembro de Pandilla",
     "edad": 24,
     "bio": "Alex es un jugador estratégico con habilidades excepcionales en combate.",
@@ -101,7 +101,7 @@
   "4": {
     "cover": "images/cover4.webp",
     "image": "images/miembro4.png",
-    "name": "Maria Lopez",
+    "name": "Diego Zavala",
     "role": "Miembro de Pandilla",
     "edad": 22,
     "bio": "Maria es una jugadora talentosa con una gran habilidad para la estrategia.",
@@ -134,7 +134,7 @@
   "5": {
     "cover": "images/cover3.webp",
     "image": "images/perfil3.png",
-    "name": "Lucas Velazque",
+    "name": "Lucas Velazquez",
     "role": "Líder de Pandilla",
     "bio": "lucas es un apasionado miembro y líder de la banda su mejor virtud es comer piso siempre.",
     "edad": 25,
@@ -169,7 +169,7 @@
   "6": {
     "cover": "images/cover6.webp",
     "image": "images/miembro6.png",
-    "name": "Laura Sanchez",
+    "name": "Jason Brown",
     "role": "Miembro de Pandilla",
     "edad": 25,
     "bio": "Laura es una jugadora estratégica con habilidades excepcionales en combate.",
@@ -202,7 +202,7 @@
   "7": {
     "cover": "images/cover7.webp",
     "image": "images/miembro7.png",
-    "name": "David Rodriguez",
+    "name": "Calogero West",
     "role": "Miembro de Pandilla",
     "edad": 23,
     "bio": "David es un jugador talentoso con una gran habilidad para la estrategia.",
@@ -235,7 +235,7 @@
   "8": {
     "cover": "images/cover8.webp",
     "image": "images/miembro8.png",
-    "name": "Ana Gomez",
+    "name": "Lisandro Pardo",
     "role": "Miembro de Pandilla",
     "edad": 21,
     "bio": "Ana es una jugadora talentosa con una gran habilidad para la estrategia.",
@@ -268,7 +268,7 @@
   "9": {
     "cover": "images/cover9.webp",
     "image": "images/miembro9.png",
-    "name": "Juan Perez",
+    "name": "Nicole Garcia",
     "role": "Miembro de Pandilla",
     "edad": 29,
     "bio": "Juan es un jugador experimentado con una gran habilidad para el combate.",
@@ -301,7 +301,7 @@
   "10": {
     "cover": "images/cover10.webp",
     "image": "images/miembro10.png",
-    "name": "Sofia Ramirez",
+    "name": "Alex Zavala",
     "role": "Miembro de Pandilla",
     "edad": 24,
     "bio": "Sofia es una jugadora estratégica con habilidades excepcionales en combate.",
@@ -334,7 +334,7 @@
   "11": {
     "cover": "images/cover11.webp",
     "image": "images/miembro11.png",
-    "name": "Luis Hernandez",
+    "name": "Ramiro Lopez",
     "role": "Miembro de Pandilla",
     "edad": 26,
     "bio": "Luis es un jugador estratégico con habilidades excepcionales en combate.",
@@ -367,7 +367,7 @@
   "12": {
     "cover": "images/cover12.webp",
     "image": "images/miembro12.png",
-    "name": "Isabel Torres",
+    "name": "Francisco Paula",
     "role": "Miembro de Pandilla",
     "edad": 22,
     "bio": "Isabel es una jugadora talentosa con una gran habilidad para la estrategia.",
@@ -400,7 +400,7 @@
   "13": {
     "cover": "images/cover13.webp",
     "image": "images/miembro13.png",
-    "name": "Miguel Diaz",
+    "name": "Fenando Quinteros",
     "role": "Miembro de Pandilla",
     "edad": 28,
     "bio": "Miguel es un jugador experimentado con una gran habilidad para el combate.",
@@ -433,7 +433,7 @@
   "14": {
     "cover": "images/cover14.webp",
     "image": "images/miembro14.png",
-    "name": "Lucia Fernandez",
+    "name": "Jonny Cojo",
     "role": "Miembro de Pandilla",
     "edad": 24,
     "bio": "Lucia es una jugadora estratégica con habilidades excepcionales en combate.",
@@ -466,7 +466,7 @@
   "15": {
     "cover": "images/cover14.webp",
     "image": "images/miembro14.png",
-    "name": "Lucia Fernandez",
+    "name": "Foster Martinez",
     "role": "Miembro de Pandilla",
     "edad": 24,
     "bio": "Lucia es una jugadora estratégica con habilidades excepcionales en combate.",
@@ -499,7 +499,7 @@
   "16": {
     "cover": "images/cover14.webp",
     "image": "images/miembro14.png",
-    "name": "Lucia Fernandez",
+    "name": "Paolo Leggio",
     "role": "Miembro de Pandilla",
     "edad": 24,
     "bio": "Lucia es una jugadora estratégica con habilidades excepcionales en combate.",
@@ -532,7 +532,7 @@
   "17": {
     "cover": "images/cover14.webp",
     "image": "images/miembro14.png",
-    "name": "Lucia Fernandez",
+    "name": "Manolito Mantas",
     "role": "Miembro de Pandilla",
     "edad": 24,
     "bio": "Lucia es una jugadora estratégica con habilidades excepcionales en combate.",
