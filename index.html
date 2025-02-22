@@ -96,7 +96,7 @@
       list-style: none;
       display: flex;
       gap: 1.5rem;
-      margin-right: 1rem; 
+      margin-right: 1rem;
     }
     nav ul li a {
       text-decoration: none;
@@ -205,33 +205,62 @@
       padding: 2rem;
       text-align: center;
     }
+
+    /* ---- Estilos para la sección de miembros tipo "tarjetas" ---- */
     .members-list {
-      padding: 2rem;
-      display: flex;
-      flex-wrap: wrap;
+      display: grid; 
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
       gap: 1rem;
-      justify-content: center;
+      padding: 2rem;
+      justify-items: center;
     }
-    .member-link {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: var(--color-primary);
-      color: var(--color-text);
-      padding: 1rem;
-      text-decoration: none;
+
+    /* TARJETAS ROMBOIDES */
+    .member-card {
+      position: relative;
+      width: 180px;
+      height: 250px; /* Ajusta la altura según lo necesario */
+      overflow: hidden;
       border-radius: 10px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      width: calc(50% - 0.5rem);
-      max-width: 200px;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.2);
+      /* Efecto romboide/octogonal con clip-path */
+      clip-path: polygon(20% 0, 100% 0, 80% 100%, 0% 100%);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .member-link img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 0.5rem;
+
+    .member-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      object-position: center; /* Centra la imagen dentro del contenedor */
     }
+
+    .member-card:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .member-name {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 0.5rem;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      text-align: center;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 0;
+      transition: background 0.3s ease;
+    }
+
+    .member-card:hover .member-name {
+      background: var(--color-primary);
+    }
+
     footer {
       background-color: var(--color-primary);
       color: var(--color-text);
@@ -239,12 +268,14 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+
     footer a {
       color: var(--color-text);
       margin: 0 0.5rem;
       text-decoration: none;
       transition: color 0.3s ease;
     }
+
     footer a:hover {
       color: var(--color-secondary);
     }
@@ -284,67 +315,11 @@
       <h2>Nuestra Historia</h2>
       <p>Próximamente... Aquí se contará la evolución de la pandilla Lowkey.</p>
     </section>
-    <section id="miembros" class="members-list">
-      <a href="miembro.html?id=1" class="member-link">
-        <img src="images/miembro1.webp" alt="Miembro: Jugador 1" loading="lazy">
-        <span>Lider 1</span>
-      </a>
-      <a href="miembro.html?id=2" class="member-link">
-        <img src="images/miembro2.webp" alt="Miembro: Jugador 2" loading="lazy">
-        <span>Lider 2</span>
-      </a>
-      <a href="miembro.html?id=3" class="member-link">
-        <img src="images/miembro3.png" alt="Miembro: Líder" loading="lazy">
-        <span>Líder 3</span>
-      </a>
-      <a href="miembro.html?id=4" class="member-link">
-        <img src="images/miembro4.png" alt="Miembro: Jugador 4" loading="lazy">
-        <span>Jugador 4</span>
-      </a>
-      <a href="miembro.html?id=5" class="member-link">
-        <img src="images/miembro5.png" alt="Miembro: Jugador 5" loading="lazy">
-        <span>Jugador 5</span>
-      </a>
-      <a href="miembro.html?id=6" class="member-link">
-        <img src="images/miembro6.png" alt="Miembro: Jugador 6" loading="lazy">
-        <span>Jugador 6</span>
-      </a>
-      <a href="miembro.html?id=7" class="member-link">
-        <img src="images/miembro7.png" alt="Miembro: Jugador 7" loading="lazy">
-        <span>Jugador 7</span>
-      </a>
-      <a href="miembro.html?id=8" class="member-link">
-        <img src="images/miembro8.png" alt="Miembro: Jugador 8" loading="lazy">
-        <span>Jugador 8</span>
-      </a>
-      <a href="miembro.html?id=9" class="member-link">
-        <img src="images/miembro9.png" alt="Miembro: Jugador 9" loading="lazy">
-        <span>Jugador 9</span>
-      </a>
-      <a href="miembro.html?id=10" class="member-link">
-        <img src="images/miembro10.png" alt="Miembro: Jugador 10" loading="lazy">
-        <span>Jugador 10</span>
-      </a>
-      <a href="miembro.html?id=11" class="member-link">
-        <img src="images/miembro11.png" alt="Miembro: Jugador 11" loading="lazy">
-        <span>Jugador 11</span>
-      </a>
-      <a href="miembro.html?id=12" class="member-link">
-        <img src="images/miembro12.png" alt="Miembro: Jugador 12" loading="lazy">
-        <span>Jugador 12</span>
-      </a>
-      <a href="miembro.html?id=13" class="member-link">
-        <img src="images/miembro13.png" alt="Miembro: Jugador 13" loading="lazy">
-        <span>Jugador 13</span>
-      </a>
-      <a href="miembro.html?id=14" class="member-link">
-        <img src="images/miembro14.png" alt="Miembro: Jugador 14" loading="lazy">
-        <span>Jugador 14</span>
-      </a>
-      <a href="miembro.html?id=15" class="member-link">
-        <img src="images/miembro15.png" alt="Miembro: Jugador 15" loading="lazy">
-        <span>Jugador 15</span>
-      </a>
+    <section id="miembros" class="character-gallery">
+      <h1>Conoce a Nuestros Miembros</h1>
+      <div class="members-list">
+        <!-- Las tarjetas de los miembros se generarán aquí -->
+      </div>
     </section>
   </main>
   <footer id="redes">
@@ -382,6 +357,48 @@
       btnMiembros.addEventListener('click', () => {
         document.getElementById('miembros').scrollIntoView({ behavior: 'smooth' });
       });
+
+      // Generar dinámicamente las tarjetas de los miembros
+      const members = [
+        { id: 1, name: 'Liam Levington', img: 'images/Liam.png' },
+        { id: 2, name: 'Nicolas Moreira', img: 'images/p2.webp' },
+        { id: 3, name: 'Kane Connor', img: 'images/m-1.jpg' },
+        { id: 4, name: 'Diego Zavala', img: 'images/miembro4.png' },
+        { id: 5, name: 'Lucas Velazquez', img: 'images/m3.png' },
+        { id: 6, name: 'Jugador 6', img: 'images/miembro6.png' },
+        { id: 7, name: 'Jugador 7', img: 'images/miembro7.png' },
+        { id: 8, name: 'Jugador 8', img: 'images/miembro8.png' },
+        { id: 9, name: 'Jugador 9', img: 'images/miembro9.png' },
+        { id: 10, name: 'Jugador 10', img: 'images/miembro10.png' },
+        { id: 11, name: 'Jugador 11', img: 'images/miembro11.png' },
+        { id: 12, name: 'Jugador 12', img: 'images/miembro12.png' },
+        { id: 13, name: 'Jugador 13', img: 'images/miembro13.png' },
+        { id: 14, name: 'Jugador 14', img: 'images/miembro14.png' },
+        { id: 15, name: 'Jugador 15', img: 'images/miembro15.png' },
+        { id: 16, name: 'Jugador 16', img: 'images/miembro16.png' },
+        { id: 17, name: 'Jugador 17', img: 'images/miembro17.png' },
+      ];
+
+      const membersList = document.querySelector('.members-list');
+
+      members.forEach(member => {
+        const memberCard = document.createElement('div');
+        memberCard.className = 'member-card';
+        memberCard.onclick = () => window.location = `miembro.html?id=${member.id}`;
+
+        const memberImg = document.createElement('img');
+        memberImg.src = member.img;
+        memberImg.alt = `Miembro: ${member.name}`;
+        memberImg.loading = 'lazy';
+
+        const memberName = document.createElement('div');
+        memberName.className = 'member-name';
+        memberName.textContent = member.name;
+
+        memberCard.appendChild(memberImg);
+        memberCard.appendChild(memberName);
+        membersList.appendChild(memberCard);
+      });
     });
 
     function toggleMenu() {
@@ -394,4 +411,4 @@
     }
   </script>
 </body>
-      </html>
+</html>
