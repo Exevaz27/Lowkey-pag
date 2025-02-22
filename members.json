@@ -16,11 +16,11 @@
     },
     "videos": [
       {
-        "url": "https://www.twitch.tv/videos/2380524509",
+        "url": "https://www.twitch.tv/videos/1234567890",
         "description": "Mejores jugadas en el torneo"
       },
       {
-        "url": "https://www.twitch.tv/lautyvzz/clip/MotionlessDeterminedZucchiniResidentSleeper-Pz3P12inWXlp6r6W",
+        "url": "https://www.twitch.tv/users/clip/MotionlessDeterminedZucchiniResidentSleeper-Pz3P12inWXlp6r6W",
         "description": "Momento destacado del stream",
         "type": "clip"
       }
@@ -49,11 +49,11 @@
     },
     "videos": [
       {
-        "url": "https://www.twitch.tv/videos/2380524509",
+        "url": "https://www.twitch.tv/videos/1234567890",
         "description": "Mejores jugadas en el torneo"
       },
       {
-        "url": "https://www.twitch.tv/lautyvzz/clip/MotionlessDeterminedZucchiniResidentSleeper-Pz3P12inWXlp6r6W",
+        "url": "https://www.twitch.tv/user/clip/MotionlessDeterminedZucchiniResidentSleeper-Pz3P12inWXlp6r6W",
         "description": "Momento destacado del stream",
         "type": "clip"
       }
@@ -66,6 +66,72 @@
     }
   },
   "3": {
+    "cover": "images/cover3.webp",
+    "image": "images/miembro3.png",
+    "name": "Alex Johnson",
+    "role": "Miembro de Pandilla",
+    "edad": 24,
+    "bio": "Alex es un jugador estratégico con habilidades excepcionales en combate.",
+    "occupation": "Gamer Profesional",
+    "weapon": "Rifle de francotirador",
+    "specialty": "Precisión y sigilo",
+    "stats": {
+      "victorias": 30,
+      "derrotas": 10,
+      "kd": 2.8
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/2345678901",
+        "description": "Partida épica en el torneo"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/AmazingClip",
+        "description": "Clip destacado del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/alex_johnson",
+      "twitter": "https://www.twitter.com/alex_johnson",
+      "instagram": "https://www.instagram.com/alex_johnson",
+      "youtube": "https://www.youtube.com/alex_johnson"
+    }
+  },
+  "4": {
+    "cover": "images/cover4.webp",
+    "image": "images/miembro4.png",
+    "name": "Maria Lopez",
+    "role": "Miembro de Pandilla",
+    "edad": 22,
+    "bio": "Maria es una jugadora talentosa con una gran habilidad para la estrategia.",
+    "occupation": "Streamer",
+    "weapon": "Pistola",
+    "specialty": "Velocidad y agilidad",
+    "stats": {
+      "victorias": 20,
+      "derrotas": 8,
+      "kd": 2.5
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/3456789012",
+        "description": "Jugadas impresionantes"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/IncredibleMoment",
+        "description": "Momento increíble del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/maria_lopez",
+      "twitter": "https://www.twitter.com/maria_lopez",
+      "instagram": "https://www.instagram.com/maria_lopez",
+      "youtube": "https://www.youtube.com/maria_lopez"
+    }
+  },
+  "5": {
     "cover": "images/cover3.webp",
     "image": "images/perfil3.png",
     "name": "Lucas Velazque",
@@ -98,6 +164,402 @@
       "facebook": "https://www.facebook.com/Lautaro.Vazquez.5832",
       "instagram": "https://www.instagram.com/lautyvzz_05/",
       "youtube": "https://www.youtube.com/@lautyvzz"
+    }
+  },
+  "6": {
+    "cover": "images/cover6.webp",
+    "image": "images/miembro6.png",
+    "name": "Laura Sanchez",
+    "role": "Miembro de Pandilla",
+    "edad": 25,
+    "bio": "Laura es una jugadora estratégica con habilidades excepcionales en combate.",
+    "occupation": "Streamer",
+    "weapon": "Rifle de asalto",
+    "specialty": "Precisión y táctica",
+    "stats": {
+      "victorias": 22,
+      "derrotas": 6,
+      "kd": 3.0
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/5678901234",
+        "description": "Partida épica en el torneo"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/AmazingClip2",
+        "description": "Clip destacado del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/laura_sanchez",
+      "twitter": "https://www.twitter.com/laura_sanchez",
+      "instagram": "https://www.instagram.com/laura_sanchez",
+      "youtube": "https://www.youtube.com/laura_sanchez"
+    }
+  },
+  "7": {
+    "cover": "images/cover7.webp",
+    "image": "images/miembro7.png",
+    "name": "David Rodriguez",
+    "role": "Miembro de Pandilla",
+    "edad": 23,
+    "bio": "David es un jugador talentoso con una gran habilidad para la estrategia.",
+    "occupation": "Gamer Profesional",
+    "weapon": "Subfusil",
+    "specialty": "Velocidad y precisión",
+    "stats": {
+      "victorias": 24,
+      "derrotas": 9,
+      "kd": 2.7
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/6789012345",
+        "description": "Jugadas impresionantes"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/IncredibleMoment2",
+        "description": "Momento increíble del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/david_rodriguez",
+      "twitter": "https://www.twitter.com/david_rodriguez",
+      "instagram": "https://www.instagram.com/david_rodriguez",
+      "youtube": "https://www.youtube.com/david_rodriguez"
+    }
+  },
+  "8": {
+    "cover": "images/cover8.webp",
+    "image": "images/miembro8.png",
+    "name": "Ana Gomez",
+    "role": "Miembro de Pandilla",
+    "edad": 21,
+    "bio": "Ana es una jugadora talentosa con una gran habilidad para la estrategia.",
+    "occupation": "Streamer",
+    "weapon": "Pistola",
+    "specialty": "Velocidad y agilidad",
+    "stats": {
+      "victorias": 20,
+      "derrotas": 8,
+      "kd": 2.5
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/7890123456",
+        "description": "Jugadas impresionantes"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/IncredibleMoment3",
+        "description": "Momento increíble del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/ana_gomez",
+      "twitter": "https://www.twitter.com/ana_gomez",
+      "instagram": "https://www.instagram.com/ana_gomez",
+      "youtube": "https://www.youtube.com/ana_gomez"
+    }
+  },
+  "9": {
+    "cover": "images/cover9.webp",
+    "image": "images/miembro9.png",
+    "name": "Juan Perez",
+    "role": "Miembro de Pandilla",
+    "edad": 29,
+    "bio": "Juan es un jugador experimentado con una gran habilidad para el combate.",
+    "occupation": "Gamer",
+    "weapon": "Escopeta",
+    "specialty": "Fuerza y resistencia",
+    "stats": {
+      "victorias": 18,
+      "derrotas": 7,
+      "kd": 2.2
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/8901234567",
+        "description": "Mejores momentos del torneo"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/GreatClip2",
+        "description": "Clip destacado del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/juan_perez",
+      "twitter": "https://www.twitter.com/juan_perez",
+      "instagram": "https://www.instagram.com/juan_perez",
+      "youtube": "https://www.youtube.com/juan_perez"
+    }
+  },
+  "10": {
+    "cover": "images/cover10.webp",
+    "image": "images/miembro10.png",
+    "name": "Sofia Ramirez",
+    "role": "Miembro de Pandilla",
+    "edad": 24,
+    "bio": "Sofia es una jugadora estratégica con habilidades excepcionales en combate.",
+    "occupation": "Streamer",
+    "weapon": "Rifle de asalto",
+    "specialty": "Precisión y táctica",
+    "stats": {
+      "victorias": 22,
+      "derrotas": 6,
+      "kd": 3.0
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/9012345678",
+        "description": "Partida épica en el torneo"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/AmazingClip3",
+        "description": "Clip destacado del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/sofia_ramirez",
+      "twitter": "https://www.twitter.com/sofia_ramirez",
+      "instagram": "https://www.instagram.com/sofia_ramirez",
+      "youtube": "https://www.youtube.com/sofia_ramirez"
+    }
+  },
+  "11": {
+    "cover": "images/cover11.webp",
+    "image": "images/miembro11.png",
+    "name": "Luis Hernandez",
+    "role": "Miembro de Pandilla",
+    "edad": 26,
+    "bio": "Luis es un jugador estratégico con habilidades excepcionales en combate.",
+    "occupation": "Gamer Profesional",
+    "weapon": "Rifle de francotirador",
+    "specialty": "Precisión y sigilo",
+    "stats": {
+      "victorias": 30,
+      "derrotas": 10,
+      "kd": 2.8
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/1234567890",
+        "description": "Partida épica en el torneo"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/AmazingClip4",
+        "description": "Clip destacado del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/luis_hernandez",
+      "twitter": "https://www.twitter.com/luis_hernandez",
+      "instagram": "https://www.instagram.com/luis_hernandez",
+      "youtube": "https://www.youtube.com/luis_hernandez"
+    }
+  },
+  "12": {
+    "cover": "images/cover12.webp",
+    "image": "images/miembro12.png",
+    "name": "Isabel Torres",
+    "role": "Miembro de Pandilla",
+    "edad": 22,
+    "bio": "Isabel es una jugadora talentosa con una gran habilidad para la estrategia.",
+    "occupation": "Streamer",
+    "weapon": "Pistola",
+    "specialty": "Velocidad y agilidad",
+    "stats": {
+      "victorias": 20,
+      "derrotas": 8,
+      "kd": 2.5
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/2345678901",
+        "description": "Jugadas impresionantes"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/IncredibleMoment4",
+        "description": "Momento increíble del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/isabel_torres",
+      "twitter": "https://www.twitter.com/isabel_torres",
+      "instagram": "https://www.instagram.com/isabel_torres",
+      "youtube": "https://www.youtube.com/isabel_torres"
+    }
+  },
+  "13": {
+    "cover": "images/cover13.webp",
+    "image": "images/miembro13.png",
+    "name": "Miguel Diaz",
+    "role": "Miembro de Pandilla",
+    "edad": 28,
+    "bio": "Miguel es un jugador experimentado con una gran habilidad para el combate.",
+    "occupation": "Gamer",
+    "weapon": "Escopeta",
+    "specialty": "Fuerza y resistencia",
+    "stats": {
+      "victorias": 18,
+      "derrotas": 7,
+      "kd": 2.2
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/3456789012",
+        "description": "Mejores momentos del torneo"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/GreatClip3",
+        "description": "Clip destacado del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/miguel_diaz",
+      "twitter": "https://www.twitter.com/miguel_diaz",
+      "instagram": "https://www.instagram.com/miguel_diaz",
+      "youtube": "https://www.youtube.com/miguel_diaz"
+    }
+  },
+  "14": {
+    "cover": "images/cover14.webp",
+    "image": "images/miembro14.png",
+    "name": "Lucia Fernandez",
+    "role": "Miembro de Pandilla",
+    "edad": 24,
+    "bio": "Lucia es una jugadora estratégica con habilidades excepcionales en combate.",
+    "occupation": "Streamer",
+    "weapon": "Rifle de asalto",
+    "specialty": "Precisión y táctica",
+    "stats": {
+      "victorias": 22,
+      "derrotas": 6,
+      "kd": 3.0
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/4567890123",
+        "description": "Partida épica en el torneo"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/AmazingClip5",
+        "description": "Clip destacado del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/lucia_fernandez",
+      "twitter": "https://www.twitter.com/lucia_fernandez",
+      "instagram": "https://www.instagram.com/lucia_fernandez",
+      "youtube": "https://www.youtube.com/lucia_fernandez"
+    }
+  },
+  "15": {
+    "cover": "images/cover14.webp",
+    "image": "images/miembro14.png",
+    "name": "Lucia Fernandez",
+    "role": "Miembro de Pandilla",
+    "edad": 24,
+    "bio": "Lucia es una jugadora estratégica con habilidades excepcionales en combate.",
+    "occupation": "Streamer",
+    "weapon": "Rifle de asalto",
+    "specialty": "Precisión y táctica",
+    "stats": {
+      "victorias": 22,
+      "derrotas": 6,
+      "kd": 3.0
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/4567890123",
+        "description": "Partida épica en el torneo"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/AmazingClip5",
+        "description": "Clip destacado del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/lucia_fernandez",
+      "twitter": "https://www.twitter.com/lucia_fernandez",
+      "instagram": "https://www.instagram.com/lucia_fernandez",
+      "youtube": "https://www.youtube.com/lucia_fernandez"
+    }
+  },
+  "16": {
+    "cover": "images/cover14.webp",
+    "image": "images/miembro14.png",
+    "name": "Lucia Fernandez",
+    "role": "Miembro de Pandilla",
+    "edad": 24,
+    "bio": "Lucia es una jugadora estratégica con habilidades excepcionales en combate.",
+    "occupation": "Streamer",
+    "weapon": "Rifle de asalto",
+    "specialty": "Precisión y táctica",
+    "stats": {
+      "victorias": 22,
+      "derrotas": 6,
+      "kd": 3.0
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/4567890123",
+        "description": "Partida épica en el torneo"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/AmazingClip5",
+        "description": "Clip destacado del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/lucia_fernandez",
+      "twitter": "https://www.twitter.com/lucia_fernandez",
+      "instagram": "https://www.instagram.com/lucia_fernandez",
+      "youtube": "https://www.youtube.com/lucia_fernandez"
+    }
+  },
+  "17": {
+    "cover": "images/cover14.webp",
+    "image": "images/miembro14.png",
+    "name": "Lucia Fernandez",
+    "role": "Miembro de Pandilla",
+    "edad": 24,
+    "bio": "Lucia es una jugadora estratégica con habilidades excepcionales en combate.",
+    "occupation": "Streamer",
+    "weapon": "Rifle de asalto",
+    "specialty": "Precisión y táctica",
+    "stats": {
+      "victorias": 22,
+      "derrotas": 6,
+      "kd": 3.0
+    },
+    "videos": [
+      {
+        "url": "https://www.twitch.tv/videos/4567890123",
+        "description": "Partida épica en el torneo"
+      },
+      {
+        "url": "https://www.twitch.tv/user/clip/AmazingClip5",
+        "description": "Clip destacado del stream",
+        "type": "clip"
+      }
+    ],
+    "social": {
+      "twitch": "https://www.twitch.tv/lucia_fernandez",
+      "twitter": "https://www.twitter.com/lucia_fernandez",
+      "instagram": "https://www.instagram.com/lucia_fernandez",
+      "youtube": "https://www.youtube.com/lucia_fernandez"
     }
   }
 }
