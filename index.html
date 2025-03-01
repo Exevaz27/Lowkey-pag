@@ -208,11 +208,17 @@
 
     /* ---- Estilos para la sección de miembros tipo "tarjetas" ---- */
     .members-list {
-      display: grid; 
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      display: grid;
       gap: 1rem;
       padding: 2rem;
       justify-items: center;
+    }
+
+    .members-row {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
     }
 
     /* TARJETAS ROMBOIDES */
@@ -255,6 +261,7 @@
       text-transform: uppercase;
       margin: 0;
       transition: background 0.3s ease;
+      transform: translateX(-10px); /* Desplaza el nombre 10px a la izquierda */
     }
 
     .member-card:hover .member-name {
@@ -381,23 +388,37 @@
 
       const membersList = document.querySelector('.members-list');
 
-      members.forEach(member => {
-        const memberCard = document.createElement('div');
-        memberCard.className = 'member-card';
-        memberCard.onclick = () => window.location = `miembro.html?id=${member.id}`;
+      const rows = [
+        members.slice(0, 2),
+        members.slice(2, 5),
+        members.slice(5, 11),
+        members.slice(11)
+      ];
 
-        const memberImg = document.createElement('img');
-        memberImg.src = member.img;
-        memberImg.alt = `Miembro: ${member.name}`;
-        memberImg.loading = 'lazy';
+      rows.forEach(row => {
+        const rowDiv = document.createElement('div');
+        rowDiv.className = 'members-row';
 
-        const memberName = document.createElement('div');
-        memberName.className = 'member-name';
-        memberName.textContent = member.name;
+        row.forEach(member => {
+          const memberCard = document.createElement('div');
+          memberCard.className = 'member-card';
+          memberCard.onclick = () => window.location = `miembro.html?id=${member.id}`;
 
-        memberCard.appendChild(memberImg);
-        memberCard.appendChild(memberName);
-        membersList.appendChild(memberCard);
+          const memberImg = document.createElement('img');
+          memberImg.src = member.img;
+          memberImg.alt = `Miembro: ${member.name}`;
+          memberImg.loading = 'lazy';
+
+          const memberName = document.createElement('div');
+          memberName.className = 'member-name';
+          memberName.textContent = member.name;
+
+          memberCard.appendChild(memberImg);
+          memberCard.appendChild(memberName);
+          rowDiv.appendChild(memberCard);
+        });
+
+        membersList.appendChild(rowDiv);
       });
     });
 
