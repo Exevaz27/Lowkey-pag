@@ -240,6 +240,26 @@
       height: 100%;
       object-fit: cover; 
       object-position: center; /* Centra la imagen dentro del contenedor */
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .member-card img:nth-child(1) {
+      opacity: 1;
+    }
+
+    .member-card img:nth-child(2) {
+      opacity: 0;
+    }
+
+    .member-card:hover img:nth-child(1) {
+      opacity: 0;
+    }
+
+    .member-card:hover img:nth-child(2) {
+      opacity: 1;
     }
 
     .member-card:hover {
@@ -367,23 +387,23 @@
 
       // Generar dinámicamente las tarjetas de los miembros
       const members = [
-        { id: 1, name: 'Liam Levington', img: 'images/Liam1.png' },
-        { id: 2, name: 'Nicolas Moreira', img: 'images/miembro.webp' },
-        { id: 3, name: 'Kane Connor', img: 'images/m-1.jpg' },
-        { id: 4, name: 'Diego Zavala', img: 'images/miembro4.png' },
-        { id: 5, name: 'Lucas Velazquez', img: 'images/m3.png' },
-        { id: 6, name: 'Jason Brown', img: 'images/miembro6.png' },
-        { id: 7, name: 'Calogero West', img: 'images/Calogero.png' },
-        { id: 8, name: 'Nicole Garcia', img: 'images/Nicole1.png' },
-        { id: 9, name: 'Alex Zavala', img: 'images/miembro9.png' },
-        { id: 10, name: 'Ramiro Lopez', img: 'images/Ramiro.png' },
-        { id: 11, name: 'Lisandro Pardo', img: 'images/miembro11.png' },
-        { id: 12, name: 'Francisco Paula', img: 'images/miembro12.png' },
-        { id: 13, name: 'Fenando Quinteros', img: 'images/miembro13.png' },
-        { id: 14, name: 'Jonny Cojo', img: 'images/miembro14.png' },
-        { id: 15, name: 'Foster Martinez', img: 'images/miembro15.png' },
-        { id: 16, name: 'Paolo Leggio', img: 'images/miembro16.png' },
-        { id: 17, name: 'Manolito Mantas', img: 'images/miembro17.png' },
+        { id: 1, name: 'Liam Levington', img: 'images/Liam1.png', hoverImg: 'images/Liam2.png' },
+        { id: 2, name: 'Nicolas Moreira', img: 'images/miembro.webp', hoverImg: 'images/miembro_hover.webp' },
+        { id: 3, name: 'Kane Connor', img: 'images/m-1.jpg', hoverImg: 'images/m-1_hover.jpg' },
+        { id: 4, name: 'Diego Zavala', img: 'images/miembro4.png', hoverImg: 'images/miembro4_hover.png' },
+        { id: 5, name: 'Lucas Velazquez', img: 'images/LucasT1.jpg', hoverImg: 'images/LucasT2.jpg' },
+        { id: 6, name: 'Jason Brown', img: 'images/miembro6.png', hoverImg: 'images/miembro6_hover.png' },
+        { id: 7, name: 'Calogero West', img: 'images/Calogero.png', hoverImg: 'images/Calogero_hover.png' },
+        { id: 8, name: 'Nicole Garcia', img: 'images/Nicole1.png', hoverImg: 'images/Nicole1_hover.png' },
+        { id: 9, name: 'Alex Zavala', img: 'images/miembro9.png', hoverImg: 'images/miembro9_hover.png' },
+        { id: 10, name: 'Ramiro Lopez', img: 'images/Ramiro.png', hoverImg: 'images/Ramiro_hover.png' },
+        { id: 11, name: 'Lisandro Pardo', img: 'images/miembro11.png', hoverImg: 'images/miembro11_hover.png' },
+        { id: 12, name: 'Francisco Paula', img: 'images/miembro12.png', hoverImg: 'images/miembro12_hover.png' },
+        { id: 13, name: 'Fenando Quinteros', img: 'images/miembro13.png', hoverImg: 'images/miembro13_hover.png' },
+        { id: 14, name: 'Jonny Cojo', img: 'images/miembro14.png', hoverImg: 'images/miembro14_hover.png' },
+        { id: 15, name: 'Foster Martinez', img: 'images/miembro15.png', hoverImg: 'images/miembro15_hover.png' },
+        { id: 16, name: 'Paolo Leggio', img: 'images/miembro16.png', hoverImg: 'images/miembro16_hover.png' },
+        { id: 17, name: 'Manolito Mantas', img: 'images/miembro17.png', hoverImg: 'images/miembro17_hover.png' },
       ];
 
       const membersList = document.querySelector('.members-list');
@@ -409,11 +429,17 @@
           memberImg.alt = `Miembro: ${member.name}`;
           memberImg.loading = 'lazy';
 
+          const memberHoverImg = document.createElement('img');
+          memberHoverImg.src = member.hoverImg;
+          memberHoverImg.alt = `Miembro: ${member.name} (hover)`;
+          memberHoverImg.loading = 'lazy';
+
           const memberName = document.createElement('div');
           memberName.className = 'member-name';
           memberName.textContent = member.name;
 
           memberCard.appendChild(memberImg);
+          memberCard.appendChild(memberHoverImg);
           memberCard.appendChild(memberName);
           rowDiv.appendChild(memberCard);
         });
