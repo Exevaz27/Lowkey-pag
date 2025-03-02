@@ -356,6 +356,13 @@
     <a href="https://twitter.com/tuenlace" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a>
     <a href="https://instagram.com/tuenlace" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
   </footer>
+  <audio id="background-music" src="music/Lowkey.mp3" autoplay loop></audio>
+  
+  <div id="audio-controls" style="position: fixed; bottom: 10px; right: 10px; background: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 5px; display: flex; align-items: center; gap: 10px;">
+    <button id="play-pause-btn" style="background: none; border: none; color: white; cursor: pointer;">⏸️</button>
+    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" style="vertical-align: middle; width: 0; transition: width 0.3s ease;">
+  </div>
+
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const menuToggle = document.querySelector('.menu-toggle');
@@ -446,6 +453,33 @@
         });
 
         membersList.appendChild(rowDiv);
+      });
+
+      const audio = document.getElementById('background-music');
+      const playPauseBtn = document.getElementById('play-pause-btn');
+      const volumeSlider = document.getElementById('volume-slider');
+      const audioControls = document.getElementById('audio-controls');
+
+      playPauseBtn.addEventListener('click', () => {
+        if (audio.paused) {
+          audio.play();
+          playPauseBtn.textContent = '⏸️';
+        } else {
+          audio.pause();
+          playPauseBtn.textContent = '▶️';
+        }
+      });
+
+      volumeSlider.addEventListener('input', (event) => {
+        audio.volume = event.target.value;
+      });
+
+      audioControls.addEventListener('mouseenter', () => {
+        volumeSlider.style.width = '100px'; // Ajusta el ancho según sea necesario
+      });
+
+      audioControls.addEventListener('mouseleave', () => {
+        volumeSlider.style.width = '0';
       });
     });
 
