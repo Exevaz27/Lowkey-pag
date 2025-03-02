@@ -67,7 +67,7 @@
       margin-left: 0;
     }
     nav .logo-right {
-      margin-right: 0;
+      margin-right: -7.5rem; /* Ajusta este valor según sea necesario */
     }
     nav .logo a, nav .logo-right a {
       display: block;
@@ -79,6 +79,7 @@
       height: auto;
       object-fit: contain;
       transform: scale(1.5) translateY(10px); /* Ajusta el valor de translateY para sobresalir más */
+      filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.5)); /* Agrega una sombra */
     }
     .menu-toggle {
       display: none;
@@ -387,16 +388,16 @@
 
       // Generar dinámicamente las tarjetas de los miembros
       const members = [
-        { id: 1, name: 'Liam Levington', img: 'images/Liam1.png', hoverImg: 'images/Liam2.png' },
+        { id: 1, name: 'Liam Levington', img: 'images/Liam1.png', hoverImg: 'images/Liam.png' },
         { id: 2, name: 'Nicolas Moreira', img: 'images/miembro.webp', hoverImg: 'images/miembro_hover.webp' },
-        { id: 3, name: 'Kane Connor', img: 'images/m-1.jpg', hoverImg: 'images/m-1_hover.jpg' },
+        { id: 3, name: 'Kane Connor', img: 'images/Kane1.png', hoverImg: 'images/Kane2.png' },
         { id: 4, name: 'Diego Zavala', img: 'images/miembro4.png', hoverImg: 'images/miembro4_hover.png' },
-        { id: 5, name: 'Lucas Velazquez', img: 'images/LucasT1.jpg', hoverImg: 'images/LucasT2.jpg' },
+        { id: 5, name: 'Lucas Velazquez', img: 'images/Lucas1.png', hoverImg: 'images/Lucas2.png' },
         { id: 6, name: 'Jason Brown', img: 'images/miembro6.png', hoverImg: 'images/miembro6_hover.png' },
-        { id: 7, name: 'Calogero West', img: 'images/Calogero.png', hoverImg: 'images/Calogero_hover.png' },
-        { id: 8, name: 'Nicole Garcia', img: 'images/Nicole1.png', hoverImg: 'images/Nicole1_hover.png' },
+        { id: 7, name: 'Calogero West', img: 'images/Calogero.png', hoverImg: 'images/Colagero1.png' },
+        { id: 8, name: 'Nicole Garcia', img: 'images/Nicole1.png', hoverImg: 'images/Nicole.png' },
         { id: 9, name: 'Alex Zavala', img: 'images/miembro9.png', hoverImg: 'images/miembro9_hover.png' },
-        { id: 10, name: 'Ramiro Lopez', img: 'images/Ramiro.png', hoverImg: 'images/Ramiro_hover.png' },
+        { id: 10, name: 'Ramiro Lopez', img: 'images/Ramiro1.png', hoverImg: 'images/Ramiro2.png' },
         { id: 11, name: 'Lisandro Pardo', img: 'images/miembro11.png', hoverImg: 'images/miembro11_hover.png' },
         { id: 12, name: 'Francisco Paula', img: 'images/miembro12.png', hoverImg: 'images/miembro12_hover.png' },
         { id: 13, name: 'Fenando Quinteros', img: 'images/miembro13.png', hoverImg: 'images/miembro13_hover.png' },
